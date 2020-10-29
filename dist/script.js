@@ -94,29 +94,40 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_base_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/base.scss */ \"./src/scss/base.scss\");\n/* harmony import */ var _scss_base_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_base_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_test_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/test.js */ \"./src/js/test.js\");\n/* harmony import */ var _js_test_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_test_js__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_init_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/init.js */ \"./src/js/init.js\");\n/* harmony import */ var _js_init_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_init_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_construct_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/construct.js */ \"./src/js/construct.js\");\n/* harmony import */ var _js_construct_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_construct_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _scss_test_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/test.scss */ \"./src/scss/test.scss\");\n/* harmony import */ var _scss_test_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_test_scss__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
-/***/ "./src/js/test.js":
+/***/ "./src/js/construct.js":
+/*!*****************************!*\
+  !*** ./src/js/construct.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("  \n\n//# sourceURL=webpack:///./src/js/construct.js?");
+
+/***/ }),
+
+/***/ "./src/js/init.js":
 /*!************************!*\
-  !*** ./src/js/test.js ***!
+  !*** ./src/js/init.js ***!
   \************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('This is test')\n\n//# sourceURL=webpack:///./src/js/test.js?");
+eval("console.log('Initialization');\n\n//# sourceURL=webpack:///./src/js/init.js?");
 
 /***/ }),
 
-/***/ "./src/scss/base.scss":
+/***/ "./src/scss/test.scss":
 /*!****************************!*\
-  !*** ./src/scss/base.scss ***!
+  !*** ./src/scss/test.scss ***!
   \****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/scss/base.scss?");
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/scss/test.scss?");
 
 /***/ })
 

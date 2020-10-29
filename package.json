@@ -7,9 +7,17 @@
     "build": "webpack",
     "watch": "webpack --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hikkin/test_front.git"
+  },
   "author": "Hikkin",
   "license": "ISC",
-  "devDependencies": {
+  "bugs": {
+    "url": "https://github.com/Hikkin/test_front/issues"
+  },
+  "homepage": "https://github.com/Hikkin/test_front#readme",
+  "dependencies": {
     "css-loader": "^3.6.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "node-sass": "^4.14.1",

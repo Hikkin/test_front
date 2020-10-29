@@ -1,2 +1,5 @@
-import "./scss/base.scss"
-import "./js/test.js"
+import './js/init.js'
+import './js/construct.js'
+
+
+import './scss/test.scss'
