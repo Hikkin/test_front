@@ -3,7 +3,7 @@
   margin-top: -220px;
   float: right;
   text-align: right;
-
+  
   .buysection_isActive{
     user-select: none;
     cursor: pointer;
@@ -151,6 +151,7 @@
     padding: 0;
 
     .product_buy_btn{
+      cursor: pointer;
       background-color: white;
       display: flex;
       height: 51px;

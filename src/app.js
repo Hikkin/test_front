@@ -1,7 +1,6 @@
 
-/*
 import './js/construct.js'
-*/
+import './js/sizes.js'
 
 
 import './scss/main.scss'

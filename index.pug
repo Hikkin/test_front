@@ -19,65 +19,6 @@ html(lang="ru")
 
   body 
     main(class="content_grid")
-      section(class="product")
-        div(class="product__item")
-
-          div(class="product__item__picture")
-              img(src="https://via.placeholder.com/220" alt="Picture")
-
-          div(class="product__item__prodinfo")         
-            div(class="prodinfo_code")
-              p Код: <b>NUMBER</b>
-            div(class="prodinfo_title")
-              p <b>TITLE</b>
-            div(class="prodinfo_assocproducts")
-              p Могут понадобиться: <i>PRODUCTS</i>
-            div(class="prodinfo_decription")
-              p <b>DESCRIPTION</b>
-
-          div(class="product__item__buysection")
-            div(class="buysection_isActive")
-              a Наличие
-            div(class="buysection_prices")
-              p(class="club_price") По карте клуба
-              span(class="buysection_numbers")
-                p(class="club_price") 375,71 &#8381;
-                p(class="basic_price") 391,09 &#8381;             
-              p(class="point_price") Можно купить за <b>POINTS</b> балла
-
-            div(class="buysection_switcher")
-              span(class="switch_item active" id="prod_switch_mkv")
-                a За м.кв
-              span(class="switch_item" id="prod_switch_pack")
-                a За упаковку
-
-            div(class="buysection_info")
-              i(class="fas fa-info-circle")
-              p Продается <b>IF PACK OR PIECE</b>:<br> 1 <b>UNIT</b> = <b>UNIT RATIO ALT</b> <b>UNIT ALT</b> 
-
-            div(class="buysection_countselect")
-              input(class="buysection_countselect_input" type="text" maxlength="3" min="1" value="1")
-
-              div(class="buysection_countselect_arrows")
-                button(class="countselect_arrow_btn" id="arrow_btn_up")
-                  i(class="fas fa-caret-up")
-                button(class="countselect_arrow_btn" id="arrow_btn_down")
-                  i(class="fas fa-caret-down")
-
-            div(class="buysection_btn")
-              button(class="product_buy_btn")
-                i(class="fas fa-shopping-cart")
-                p В корзину
-
-
-
-
-
-
-
-
-
-
-
+      section(class="product" id="products")
     script(src="dist/script.js")
 

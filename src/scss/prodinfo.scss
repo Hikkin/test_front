@@ -14,10 +14,12 @@
     margin-top: 20px;
     font-size: 24px;
     line-height: 24px;
+    max-width: 1010px;
     color: rgba(0, 0, 0, 1);
   }
 
   .prodinfo_assocproducts {
+    max-width: 1010px;
     display: none;
   }
 
@@ -26,5 +28,7 @@
     line-height: 18px;
     color: rgba(0, 0, 0, 0.8);
     margin-top: 15px;
+    max-width: 1010px;
+    width: 1010px;
   }
 }
