@@ -1,2 +1,208 @@
-h1 {
-  color: red; }
+body {
+  background-color: #d9cce6;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+.content_grid {
+  margin: 35px 8%;
+  min-width: 240px; }
+
+.product {
+  min-width: 240px; }
+
+.product__item {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: inherit;
+  min-width: 240px;
+  min-height: 265px;
+  padding: 10px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 6px; }
+.product__item__picture {
+  display: block;
+  box-sizing: border-box;
+  width: 220px;
+  height: 220px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px; }
+  .product__item__picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; }
+.product__item__prodinfo {
+  position: absolute;
+  display: block;
+  margin-top: -220px;
+  margin-left: 230px; }
+  .product__item__prodinfo .prodinfo_code {
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.6); }
+  .product__item__prodinfo .prodinfo_title {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    color: black; }
+  .product__item__prodinfo .prodinfo_assocproducts {
+    display: none; }
+  .product__item__prodinfo .prodinfo_decription {
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 15px; }
+.product__item__buysection {
+  display: block;
+  margin-top: -220px;
+  float: right;
+  text-align: right; }
+  .product__item__buysection .buysection_isActive {
+    user-select: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 14px;
+    color: #137e09; }
+    .product__item__buysection .buysection_isActive :hover {
+      font-weight: bold; }
+  .product__item__buysection .buysection_prices {
+    margin-top: 10px; }
+    .product__item__buysection .buysection_prices .buysection_numbers {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: bold; }
+      .product__item__buysection .buysection_prices .buysection_numbers :last-child {
+        margin-left: 50px; }
+    .product__item__buysection .buysection_prices .basic_price {
+      color: rgba(0, 0, 0, 0.5); }
+    .product__item__buysection .buysection_prices .club_price {
+      font-weight: bold;
+      color: #6519bb; }
+    .product__item__buysection .buysection_prices .point_price {
+      margin-top: 5px;
+      font-size: 12px;
+      line-height: 12px;
+      color: rgba(0, 0, 0, 0.5); }
+  .product__item__buysection .buysection_switcher {
+    margin-top: 5px; }
+    .product__item__buysection .buysection_switcher .switch_item {
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 1px 8px;
+      background-color: rgba(0, 0, 0, 0.15); }
+    .product__item__buysection .buysection_switcher .switch_item:hover {
+      background-color: rgba(0, 0, 0, 0.25); }
+    .product__item__buysection .buysection_switcher .active {
+      cursor: default;
+      background-color: #450194;
+      color: white; }
+    .product__item__buysection .buysection_switcher .active:hover {
+      background-color: #450194;
+      color: white; }
+    .product__item__buysection .buysection_switcher #prod_switch_mkv {
+      margin-right: 5px; }
+  .product__item__buysection .buysection_info {
+    display: flex;
+    margin-top: 5px;
+    padding: 1px 6px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); }
+    .product__item__buysection .buysection_info i {
+      margin: auto 0;
+      padding: 0 5px;
+      font-size: 32px; }
+    .product__item__buysection .buysection_info p {
+      text-align: left; }
+  .product__item__buysection .buysection_countselect .buysection_countselect_input {
+    display: block;
+    margin: 5px 0 0 0;
+    padding: 0;
+    width: 75px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    line-height: 44px;
+    font-size: 44px;
+    text-align: right;
+    border-radius: 2px; }
+  .product__item__buysection .buysection_countselect .buysection_countselect_arrows {
+    width: fit-content;
+    height: 51px;
+    display: flex;
+    margin-top: -50.6px;
+    margin-left: 76.5px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between; }
+    .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn {
+      margin: 0;
+      padding: 0;
+      width: 25px;
+      height: 25px;
+      font-size: 22.5px;
+      text-align: center;
+      border: none;
+      outline: none;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 2px; }
+      .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn i {
+        margin: 0 auto;
+        text-align: center;
+        line-height: 24px; }
+    .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn:hover {
+      background-color: #b09dc5; }
+    .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn:active {
+      background-color: #947eac; }
+  .product__item__buysection .buysection_btn {
+    display: block;
+    margin-top: -51px;
+    padding: 0; }
+    .product__item__buysection .buysection_btn .product_buy_btn {
+      background-color: white;
+      display: flex;
+      height: 51px;
+      width: 200px;
+      margin-left: 120px;
+      padding-left: 30px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      border: none;
+      outline: none;
+      text-align: center;
+      border-radius: 5px; }
+      .product__item__buysection .buysection_btn .product_buy_btn i {
+        font-size: 24px;
+        text-align: center;
+        margin: auto 0; }
+      .product__item__buysection .buysection_btn .product_buy_btn p {
+        padding-left: 5px;
+        font-size: 24px;
+        margin: auto 0; }
+    .product__item__buysection .buysection_btn .product_buy_btn:hover {
+      background-color: #712cbb;
+      color: white; }
+    .product__item__buysection .buysection_btn .product_buy_btn:active {
+      background-color: #2e0c53;
+      color: white; }
+/*@media screen and (max-width: 1439px){
+  .product__item{
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1279px){
+  .product__item{
+    width: 700px;
+  }
+}
+@media screen and (max-width: 899px){
+  .product__item{
+    width: 600px;
+  }
+}*/

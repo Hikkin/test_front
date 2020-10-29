@@ -1,0 +1,190 @@
+.product__item__buysection{
+  display: block;
+  margin-top: -220px;
+  float: right;
+  text-align: right;
+
+  .buysection_isActive{
+    user-select: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 14px;
+    color: #137e09;
+    :hover{
+      font-weight: bold;
+    }
+  }
+
+  .buysection_prices{
+    margin-top: 10px;
+    .buysection_numbers{
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: bold;
+      :last-child{
+        margin-left: 50px;
+      }
+    }
+
+    .basic_price{
+      color:rgba(0, 0, 0, 0.5);
+    }
+
+    .club_price{
+      font-weight: bold;
+      color: #6519bb;
+    }
+
+    .point_price {
+      margin-top: 5px;
+      font-size: 12px;
+      line-height: 12px;
+      color: rgba(0, 0, 0, 0.5)
+    }
+  }
+
+  .buysection_switcher{
+    margin-top: 5px;
+
+    .switch_item{
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 1px 8px;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+    .switch_item:hover{
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .active{
+      cursor: default;
+      background-color: #450194;
+      color: white;
+    }
+    .active:hover{
+      background-color: #450194;
+      color: white;
+    }
+
+    #prod_switch_mkv{
+      margin-right: 5px;
+    }
+  }
+
+  .buysection_info{
+    display: flex;  
+    margin-top: 5px;
+    padding: 1px 6px;
+    
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+
+    i{
+      margin: auto 0;
+      padding: 0 5px;
+      font-size: 32px;
+    }
+
+    p{
+      text-align: left;
+    }
+  }
+
+  .buysection_countselect{
+    .buysection_countselect_input{
+      display: block;
+      margin: 5px 0 0 0 ;
+      padding: 0;
+      width: 75px;
+
+      outline: none;
+      border: none;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      line-height: 44px;
+      font-size: 44px;
+      text-align: right;
+      border-radius: 2px;
+    }
+
+    .buysection_countselect_arrows{
+      width: fit-content;
+      height: 51px;
+      display: flex;
+      margin-top: -50.6px;
+      margin-left: 76.5px;
+      padding: 0;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .countselect_arrow_btn{
+        margin: 0;
+        padding: 0;
+        width: 25px;
+        height: 25px;
+
+        font-size: 22.5px;
+        text-align: center;
+        border: none;
+        outline: none;
+
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+
+        border-radius: 2px;
+        i{
+          margin: 0 auto;
+          text-align: center;
+          line-height: 24px;
+        }
+
+      }
+      .countselect_arrow_btn:hover{
+        background-color: rgb(176, 157, 197);
+      }
+      .countselect_arrow_btn:active{
+        background-color: rgb(148, 126, 172);
+      }
+    }
+  }
+
+  .buysection_btn{
+    display: block;
+    margin-top: -51px;
+    padding: 0;
+
+    .product_buy_btn{
+      background-color: white;
+      display: flex;
+      height: 51px;
+      width: 200px;
+      margin-left: 120px;
+      padding-left: 30px;
+
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      border: none;
+      outline: none;
+      text-align: center;
+
+      border-radius: 5px;
+
+      i{
+        font-size: 24px;
+        text-align: center;
+        margin: auto 0;
+      }
+      p{
+        padding-left: 5px;
+        font-size: 24px;
+        margin: auto 0;
+      }
+    }
+    .product_buy_btn:hover{
+      background-color: rgb(113, 44, 187);
+      color: white;
+    }
+    .product_buy_btn:active{
+      background-color: rgb(46, 12, 83);
+      color: white;
+
+    }
+  }
+
+}

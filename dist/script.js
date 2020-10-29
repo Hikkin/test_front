@@ -94,40 +94,62 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_init_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/init.js */ \"./src/js/init.js\");\n/* harmony import */ var _js_init_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_init_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_construct_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/construct.js */ \"./src/js/construct.js\");\n/* harmony import */ var _js_construct_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_construct_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _scss_test_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/test.scss */ \"./src/scss/test.scss\");\n/* harmony import */ var _scss_test_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_test_scss__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_picture_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/picture.scss */ \"./src/scss/picture.scss\");\n/* harmony import */ var _scss_picture_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_picture_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _scss_prodinfo_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scss/prodinfo.scss */ \"./src/scss/prodinfo.scss\");\n/* harmony import */ var _scss_prodinfo_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_scss_prodinfo_scss__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _scss_buysection_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./scss/buysection.scss */ \"./src/scss/buysection.scss\");\n/* harmony import */ var _scss_buysection_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_scss_buysection_scss__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _scss_media_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scss/media.scss */ \"./src/scss/media.scss\");\n/* harmony import */ var _scss_media_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scss_media_scss__WEBPACK_IMPORTED_MODULE_3__);\n\r\n/*\r\nimport './js/construct.js'\r\n*/\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
-/***/ "./src/js/construct.js":
-/*!*****************************!*\
-  !*** ./src/js/construct.js ***!
-  \*****************************/
+/***/ "./src/scss/buysection.scss":
+/*!**********************************!*\
+  !*** ./src/scss/buysection.scss ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("$(function () {\r\n\r\n  var products = [];\r\n\r\n  $.getJSON('products.json', function (data) {\r\n    $.each(data.product, function (i, f) {\r\n      var tblRow = \r\n        \"<tr>\" + \r\n          \"<td>\" + f.productId + \"</td>\" + \r\n          \"<td>\" + f.code + \"</td>\" + \r\n          \"<td>\" + f.title + \"</td>\" + \r\n          \"<td>\" + f.description + \"</td>\" +\r\n          \"<td>\" + f.primaryImageUrl + \"</td>\" +\r\n          \"<td>\" + f.assocProducts + \"</td>\" +\r\n          \"<td>\" + f.weight + \"</td>\" +\r\n          \"<td>\" + f.unit + \"</td>\" +\r\n          \"<td>\" + f.unitFull + \"</td>\" +\r\n          \"<td>\" + f.unitRatio + \"</td>\" +\r\n          \"<td>\" + f.unitAlt + \"</td>\" +\r\n          \"<td>\" + f.unitRatioAlt + \"</td>\" +\r\n          \"<td>\" + f.unitFullAlt + \"</td>\" +\r\n          \"<td>\" + f.priceRetail + \"</td>\" +\r\n          \"<td>\" + f.priceRetailAlt + \"</td>\" +\r\n          \"<td>\" + f.priceGold + \"</td>\" +\r\n          \"<td>\" + f.priceGoldAlt + \"</td>\" +\r\n          \"<td>\" + f.bonusAmount + \"</td>\" +\r\n          \"<td>\" + f.hasAlternateUnit + \"</td>\" +\r\n          \"<td>\" + f.isActive + \"</td>\" +\r\n          \"<td>\" + f.modified + \"</td>\" +\r\n        \"</tr>\"\r\n\r\n      $(tblRow).appendTo(\"#proddata tbody\");\r\n    });\r\n\r\n  });\r\n\r\n});\n\n//# sourceURL=webpack:///./src/js/construct.js?");
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/scss/buysection.scss?");
 
 /***/ }),
 
-/***/ "./src/js/init.js":
-/*!************************!*\
-  !*** ./src/js/init.js ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("console.log('Initialization');\n\n//# sourceURL=webpack:///./src/js/init.js?");
-
-/***/ }),
-
-/***/ "./src/scss/test.scss":
+/***/ "./src/scss/main.scss":
 /*!****************************!*\
-  !*** ./src/scss/test.scss ***!
+  !*** ./src/scss/main.scss ***!
   \****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/scss/test.scss?");
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/scss/main.scss?");
+
+/***/ }),
+
+/***/ "./src/scss/media.scss":
+/*!*****************************!*\
+  !*** ./src/scss/media.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/scss/media.scss?");
+
+/***/ }),
+
+/***/ "./src/scss/picture.scss":
+/*!*******************************!*\
+  !*** ./src/scss/picture.scss ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/scss/picture.scss?");
+
+/***/ }),
+
+/***/ "./src/scss/prodinfo.scss":
+/*!********************************!*\
+  !*** ./src/scss/prodinfo.scss ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/scss/prodinfo.scss?");
 
 /***/ })
 

@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(217, 204, 230);
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.content_grid {
+  margin: 35px 8%;
+  min-width: 240px;
+}
+
+.product {
+  min-width: 240px;
+}
+
+.product__item {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width:inherit;
+
+  min-width: 240px;
+  min-height: 265px;
+  padding: 10px;
+
+  background: #FFFFFF;
+  
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}

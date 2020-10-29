@@ -1,0 +1,30 @@
+.product__item__prodinfo {
+  position: absolute;
+  display: block;
+  margin-top: -220px;
+  margin-left: 230px;
+
+  .prodinfo_code {
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .prodinfo_title {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .prodinfo_assocproducts {
+    display: none;
+  }
+
+  .prodinfo_decription {
+    font-size: 18px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+  }
+}
