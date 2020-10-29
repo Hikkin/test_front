@@ -10,57 +10,40 @@
 </head>
 
 <body>
-  <input type="button" onclick="CreateTableFromJSON()" value="Create Table From JSON" />
-  <p id="showData"></p>
-  </table>
 
+  <div class="wrapper">
+    <div class="profile">
+      <table id="proddata" border="2">
+        <thead>
+          <th>productId</th>
+          <th>code</th>
+          <th>title</th>
+          <th>description</th>
+          <th>primaryImageUrl</th>
+          <th>assocProducts</th>
+          <th>weight</th>
+          <th>unit</th>
+          <th>unitFull</th>
+          <th>unitRatio</th>
+          <th>unitAlt</th>
+          <th>unitRatioAlt</th>
+          <th>unitFullAlt</th>
+          <th>priceRetail</th>
+          <th>priceRetailAlt</th>
+          <th>priceGold</th>
+          <th>priceGoldAlt</th>
+          <th>bonusAmount</th>
+          <th>hasAlternateUnit</th>
+          <th>isActive</th>
+          <th>modified</th>
+        </thead>
+        <tbody>
 
-  <script type="text/javascript">
-    function CreateTableFromJSON() {
-        var peoples = $.getJSON('products.json')
+        </tbody>
+      </table>
 
-        // EXTRACT VALUE FOR HTML HEADER. 
-        // ('Book ID', 'Book Name', 'Category' and 'Price')
-        var col = [];
-        for (var i = 0; i < peoples.length; i++) {
-            for (var key in myBooks[i]) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                }
-            }
-        }
-
-        // CREATE DYNAMIC TABLE.
-        var table = document.createElement("table");
-
-        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
-
-        var tr = table.insertRow(-1);                   // TABLE ROW.
-
-        for (var i = 0; i < col.length; i++) {
-            var th = document.createElement("th");      // TABLE HEADER.
-            th.innerHTML = col[i];
-            tr.appendChild(th);
-        }
-
-        // ADD JSON DATA TO THE TABLE AS ROWS.
-        for (var i = 0; i < peoples.length; i++) {
-
-            tr = table.insertRow(-1);
-
-            for (var j = 0; j < col.length; j++) {
-                var tabCell = tr.insertCell(-1);
-                tabCell.innerHTML = peoples[i][col[j]];
-            }
-        }
-
-        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
-        var divContainer = document.getElementById("showData");
-        divContainer.innerHTML = "";
-        divContainer.appendChild(table);
-    }
-  </script>
-
+    </div>
+  </div>
 
   <script src="dist/script.js"></script>
 </body>
