@@ -1,7 +1,4 @@
 .product__item__buysection{
-  display: block;
-  margin-top: -220px;
-  float: right;
   text-align: right;
   
   .buysection_isActive{
@@ -16,14 +13,12 @@
   }
 
   .buysection_prices{
+    user-select: none;
     margin-top: 10px;
     .buysection_numbers{
       font-size: 24px;
       line-height: 24px;
       font-weight: bold;
-      :last-child{
-        margin-left: 50px;
-      }
     }
 
     .basic_price{
@@ -44,6 +39,7 @@
   }
 
   .buysection_switcher{
+    user-select: none;
     margin-top: 5px;
 
     .switch_item{
@@ -90,6 +86,7 @@
   }
 
   .buysection_countselect{
+    width: 100px;
     .buysection_countselect_input{
       display: block;
       margin: 5px 0 0 0 ;
@@ -146,18 +143,17 @@
   }
 
   .buysection_btn{
-    display: block;
     margin-top: -51px;
     padding: 0;
 
     .product_buy_btn{
+      width: fit-content;
       cursor: pointer;
       background-color: white;
-      display: flex;
+      display: block;
       height: 51px;
-      width: 200px;
-      margin-left: 120px;
-      padding-left: 30px;
+      margin-left: 110px;
+      padding: 2px 30px;
 
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
       border: none;
@@ -167,16 +163,17 @@
       border-radius: 5px;
 
       i{
-        font-size: 24px;
+        font-size: 17px;
         text-align: center;
         margin: auto 0;
       }
       p{
         padding-left: 5px;
-        font-size: 24px;
+        font-size: 22px;
         margin: auto 0;
       }
     }
+
     .product_buy_btn:hover{
       background-color: rgb(113, 44, 187);
       color: white;

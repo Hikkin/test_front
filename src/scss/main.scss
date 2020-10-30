@@ -24,7 +24,8 @@ p {
 
 .product__item {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   width:inherit;
   margin-bottom: 10px;

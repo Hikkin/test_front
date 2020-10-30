@@ -19,7 +19,8 @@ p {
 
 .product__item {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   width: inherit;
   margin-bottom: 10px;
@@ -33,6 +34,7 @@ p {
 .product__item__picture {
   display: block;
   box-sizing: border-box;
+  margin: 0;
   width: 220px;
   height: 220px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
@@ -42,34 +44,34 @@ p {
     height: 220px;
     border-radius: 5px; }
 .product__item__prodinfo {
-  position: absolute;
-  display: block;
-  margin-top: -220px;
-  margin-left: 230px; }
+  margin-left: 10px;
+  display: block; }
   .product__item__prodinfo .prodinfo_code {
     font-size: 14px;
     line-height: 14px;
-    color: rgba(0, 0, 0, 0.6); }
+    color: rgba(0, 0, 0, 0.6);
+    min-width: 220px; }
   .product__item__prodinfo .prodinfo_title {
     margin-top: 20px;
     font-size: 24px;
     line-height: 24px;
     max-width: 1010px;
+    min-width: 220px;
     color: black; }
   .product__item__prodinfo .prodinfo_assocproducts {
+    margin-top: 10px;
     max-width: 1010px;
-    display: none; }
+    min-width: 220px;
+    color: rgba(0, 0, 0, 0.6); }
   .product__item__prodinfo .prodinfo_decription {
     font-size: 18px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.8);
     margin-top: 15px;
     max-width: 1010px;
+    min-width: 220px;
     width: 1010px; }
 .product__item__buysection {
-  display: block;
-  margin-top: -220px;
-  float: right;
   text-align: right; }
   .product__item__buysection .buysection_isActive {
     user-select: none;
@@ -80,13 +82,12 @@ p {
     .product__item__buysection .buysection_isActive :hover {
       font-weight: bold; }
   .product__item__buysection .buysection_prices {
+    user-select: none;
     margin-top: 10px; }
     .product__item__buysection .buysection_prices .buysection_numbers {
       font-size: 24px;
       line-height: 24px;
       font-weight: bold; }
-      .product__item__buysection .buysection_prices .buysection_numbers :last-child {
-        margin-left: 50px; }
     .product__item__buysection .buysection_prices .basic_price {
       color: rgba(0, 0, 0, 0.5); }
     .product__item__buysection .buysection_prices .club_price {
@@ -98,6 +99,7 @@ p {
       line-height: 12px;
       color: rgba(0, 0, 0, 0.5); }
   .product__item__buysection .buysection_switcher {
+    user-select: none;
     margin-top: 5px; }
     .product__item__buysection .buysection_switcher .switch_item {
       cursor: pointer;
@@ -126,70 +128,71 @@ p {
       font-size: 32px; }
     .product__item__buysection .buysection_info p {
       text-align: left; }
-  .product__item__buysection .buysection_countselect .buysection_countselect_input {
-    display: block;
-    margin: 5px 0 0 0;
-    padding: 0;
-    width: 75px;
-    outline: none;
-    border: none;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    line-height: 44px;
-    font-size: 44px;
-    text-align: right;
-    border-radius: 2px; }
-  .product__item__buysection .buysection_countselect .buysection_countselect_arrows {
-    width: fit-content;
-    height: 51px;
-    display: flex;
-    margin-top: -50.6px;
-    margin-left: 76.5px;
-    padding: 0;
-    flex-direction: column;
-    justify-content: space-between; }
-    .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn {
-      margin: 0;
+  .product__item__buysection .buysection_countselect {
+    width: 100px; }
+    .product__item__buysection .buysection_countselect .buysection_countselect_input {
+      display: block;
+      margin: 5px 0 0 0;
       padding: 0;
-      width: 25px;
-      height: 25px;
-      font-size: 22.5px;
-      text-align: center;
-      border: none;
+      width: 75px;
       outline: none;
+      border: none;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      line-height: 44px;
+      font-size: 44px;
+      text-align: right;
       border-radius: 2px; }
-      .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn i {
-        margin: 0 auto;
+    .product__item__buysection .buysection_countselect .buysection_countselect_arrows {
+      width: fit-content;
+      height: 51px;
+      display: flex;
+      margin-top: -50.6px;
+      margin-left: 76.5px;
+      padding: 0;
+      flex-direction: column;
+      justify-content: space-between; }
+      .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn {
+        margin: 0;
+        padding: 0;
+        width: 25px;
+        height: 25px;
+        font-size: 22.5px;
         text-align: center;
-        line-height: 24px; }
-    .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn:hover {
-      background-color: #b09dc5; }
-    .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn:active {
-      background-color: #947eac; }
+        border: none;
+        outline: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 2px; }
+        .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn i {
+          margin: 0 auto;
+          text-align: center;
+          line-height: 24px; }
+      .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn:hover {
+        background-color: #b09dc5; }
+      .product__item__buysection .buysection_countselect .buysection_countselect_arrows .countselect_arrow_btn:active {
+        background-color: #947eac; }
   .product__item__buysection .buysection_btn {
-    display: block;
     margin-top: -51px;
     padding: 0; }
     .product__item__buysection .buysection_btn .product_buy_btn {
+      width: fit-content;
       cursor: pointer;
       background-color: white;
-      display: flex;
+      display: block;
       height: 51px;
-      width: 200px;
-      margin-left: 120px;
-      padding-left: 30px;
+      margin-left: 110px;
+      padding: 2px 30px;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
       border: none;
       outline: none;
       text-align: center;
       border-radius: 5px; }
       .product__item__buysection .buysection_btn .product_buy_btn i {
-        font-size: 24px;
+        font-size: 17px;
         text-align: center;
         margin: auto 0; }
       .product__item__buysection .buysection_btn .product_buy_btn p {
         padding-left: 5px;
-        font-size: 24px;
+        font-size: 22px;
         margin: auto 0; }
     .product__item__buysection .buysection_btn .product_buy_btn:hover {
       background-color: #712cbb;
@@ -197,18 +200,57 @@ p {
     .product__item__buysection .buysection_btn .product_buy_btn:active {
       background-color: #2e0c53;
       color: white; }
-/*@media screen and (max-width: 1439px){
-  .product__item{
-    width: 1000px;
-  }
-}
-@media screen and (max-width: 1279px){
-  .product__item{
-    width: 700px;
-  }
-}
-@media screen and (max-width: 899px){
-  .product__item{
-    width: 600px;
-  }
-}*/
+@media screen and (max-width: 1279px) {
+  .prodinfo_decription {
+    display: none; } }
+
+@media screen and (max-width: 1023px) {
+  .product__item {
+    display: block;
+    max-width: 570px; }
+  .product__item__buysection {
+    text-align: left;
+    margin-top: 15px; }
+  .product__item__prodinfo {
+    position: absolute;
+    margin-top: -215px;
+    margin-left: 250px; }
+  .buysection_info {
+    text-align: left;
+    width: fit-content; }
+  .product_buy_btn p {
+    display: none; }
+  .product_buy_btn i {
+    font-size: 36px !important; } }
+
+@media screen and (max-width: 767px) {
+  .product__item__picture {
+    margin: 0 auto; }
+  .product__item {
+    text-align: center; }
+  .product__item__prodinfo {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 0; }
+  .product__item__buysection {
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center; }
+  .buysection_info {
+    margin: 0 auto; }
+  .buysection_countselect {
+    margin: 0 auto; }
+  .buysection_countselect_input {
+    text-align: center; }
+  .buysection_btn {
+    margin-left: 0;
+    margin: 0 auto !important;
+    text-align: center; }
+  .product_buy_btn {
+    text-align: center;
+    margin: 10px auto !important;
+    width: 100px !important; }
+    .product_buy_btn i {
+      font-size: 36px !important; } }

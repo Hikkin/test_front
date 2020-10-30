@@ -1,13 +1,12 @@
 .product__item__prodinfo {
-  position: absolute;
+  margin-left: 10px;
   display: block;
-  margin-top: -220px;
-  margin-left: 230px;
 
   .prodinfo_code {
     font-size: 14px;
     line-height: 14px;
     color: rgba(0, 0, 0, 0.6);
+    min-width: 220px;
   }
 
   .prodinfo_title {
@@ -15,12 +14,15 @@
     font-size: 24px;
     line-height: 24px;
     max-width: 1010px;
+    min-width: 220px;
     color: rgba(0, 0, 0, 1);
   }
 
   .prodinfo_assocproducts {
+    margin-top: 10px;
     max-width: 1010px;
-    display: none;
+    min-width: 220px;
+    color: rgba(0, 0, 0, 0.6);
   }
 
   .prodinfo_decription {
@@ -29,6 +31,7 @@
     color: rgba(0, 0, 0, 0.8);
     margin-top: 15px;
     max-width: 1010px;
+    min-width: 220px;
     width: 1010px;
   }
 }
