@@ -41,18 +41,22 @@
   }
 
   .product__item {
-    text-align: center;
+    text-align: center !important;
   }
 
   .product__item__prodinfo {
 
     position: relative;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-left: 0;
+    text-align: center !important;
+    margin: 5px auto !important;
+    width: auto !important;
   }
-
+  .prodinfo_title{
+    margin: 5px auto !important;
+  }
+  .prodinfo_code {
+    margin-top: 10px !important;
+  }
   .product__item__buysection {
     margin: 0 auto;
     margin-top: 15px;

@@ -44,6 +44,7 @@ p {
     height: 220px;
     border-radius: 5px; }
 .product__item__prodinfo {
+  min-width: 220px;
   margin-left: 10px;
   display: block; }
   .product__item__prodinfo .prodinfo_code {
@@ -227,13 +228,16 @@ p {
   .product__item__picture {
     margin: 0 auto; }
   .product__item {
-    text-align: center; }
+    text-align: center !important; }
   .product__item__prodinfo {
     position: relative;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-left: 0; }
+    text-align: center !important;
+    margin: 5px auto !important;
+    width: auto !important; }
+  .prodinfo_title {
+    margin: 5px auto !important; }
+  .prodinfo_code {
+    margin-top: 10px !important; }
   .product__item__buysection {
     margin: 0 auto;
     margin-top: 15px;

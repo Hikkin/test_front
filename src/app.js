@@ -1,6 +1,6 @@
 
 import './js/construct.js'
-import './js/sizes'
+import './js/sizes.js'
 
 
 import './scss/main.scss'
